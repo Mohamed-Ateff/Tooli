@@ -11,3 +11,35 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
+
+.gradient-effect {
+  background: linear-gradient(45deg, #ff0080, #ff8c00, #ffed00);
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  animation: pulse 15s ease-in-out infinite;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #ff0080, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

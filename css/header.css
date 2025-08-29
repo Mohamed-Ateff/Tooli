@@ -58,7 +58,7 @@ nav {
 }
 
 .donate-btn {
-  background: #0f0f0f;
+  background: linear-gradient(45deg, #ff0080, #ff8c00);
   color: white;
   padding: 0.75rem 1.75rem;
   border-radius: 100px;
@@ -70,7 +70,6 @@ nav {
 }
 
 .donate-btn:hover {
-  background: #2d2d2d;
   transform: translateY(-1px);
 }
 

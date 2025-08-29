@@ -12,7 +12,22 @@
   padding: 4rem 0;
   text-align: center;
   margin-top: 80px; /* Account for fixed header */
+  position: relative;
+  overflow: hidden;
 }
+/* .hero::after {
+  content: "";
+  background: linear-gradient(45deg, #ff0080, #ff8c00, #ffed00);
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  animation: pulse 15s ease-in-out infinite;
+} */
 
 .hero-content {
   max-width: 800px; /* Fixed width for better consistency */
@@ -209,7 +224,7 @@
 
 .btn-primary {
   width: 50%;
-  background: #0f0f0f;
+  background: linear-gradient(45deg, #ff0080, #ff8c00);
   color: white;
   padding: 0.875rem 2rem;
   border: none;
@@ -230,7 +245,6 @@
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(15, 15, 15, 0.25);
 }
 
 .btn-secondary {
