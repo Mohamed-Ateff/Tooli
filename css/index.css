@@ -10,7 +10,6 @@ body {
   color: #0f0f0f;
   font-size: 14px;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 .gradient-effect {
@@ -43,4 +42,11 @@ body {
   background: linear-gradient(to right, #ff0080, #ff8c00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .gradient-effect {
+    width: 100%;
+  }
 }
