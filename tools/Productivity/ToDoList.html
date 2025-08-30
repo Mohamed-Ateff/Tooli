@@ -2,21 +2,27 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KSG4W7JTSM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KSG4W7JTSM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-KSG4W7JTSM');
-</script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5868349534316496"
-     crossorigin="anonymous"></script>
+      gtag("config", "G-KSG4W7JTSM");
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5868349534316496"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      To-Do List Manager - Organize Your Tasks Efficiently | Tooli
-    </title>
+    <title>To-Do List Manager - Organize Your Tasks Efficiently | Tooli</title>
     <meta
       name="description"
       content="Stay organized with Tooli's free online To-Do List Manager. Create, manage, and track your tasks efficiently with our intuitive task management tool."
@@ -97,6 +103,7 @@
     <link rel="stylesheet" href="../../css/header.css" />
     <link rel="stylesheet" href="../../css/Tools.css" />
     <link rel="stylesheet" href="../../css/faqTools.css" />
+    <link rel="stylesheet" href="../../css/Productivity/ToDoList.css" />
 
     <!-- Google Fonts -->
     <link
@@ -111,297 +118,6 @@
       sizes="32x32"
       href="images/favicon-32x32.png"
     />
-
-    <style>
-      /* To-Do List Manager Specific Styles */
-      .todo-container {
-        background: #ffffff;
-        border: 2px solid #e5e5e5;
-        border-radius: 12px;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-      }
-
-      .add-task-section {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 2rem;
-        align-items: flex-start;
-      }
-
-      .task-input {
-        flex: 1;
-        padding: 0.875rem;
-        border: 2px solid #e5e5e5;
-        border-radius: 8px;
-        font-family: inherit;
-        font-size: 15px;
-        transition: all 0.2s ease;
-      }
-
-      .task-input:focus {
-        outline: none;
-        border-color: #0f0f0f;
-        box-shadow: 0 0 0 3px rgba(15, 15, 15, 0.1);
-      }
-
-      .task-input::placeholder {
-        color: #a3a3a3;
-        font-style: italic;
-      }
-
-      .add-task-btn {
-        background: #0f0f0f;
-        color: white;
-        padding: 0.875rem 1.5rem;
-        border: none;
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        white-space: nowrap;
-      }
-
-      .add-task-btn:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 6px 20px rgba(15, 15, 15, 0.25);
-      }
-
-      .tasks-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #e5e5e5;
-      }
-
-      .tasks-count {
-        font-size: 14px;
-        color: #525252;
-        font-weight: 500;
-      }
-
-      .clear-completed-btn {
-        background: transparent;
-        color: #f87171;
-        border: 1px solid #f87171;
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-        font-size: 12px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-      }
-
-      .clear-completed-btn:hover {
-        background: #f87171;
-        color: white;
-      }
-
-      .tasks-list {
-        max-height: 400px;
-        overflow-y: auto;
-      }
-
-      .task-item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-        border: 1px solid #f0f0f0;
-        border-radius: 8px;
-        margin-bottom: 0.75rem;
-        transition: all 0.2s ease;
-        background: #ffffff;
-      }
-
-      .task-item:hover {
-        border-color: #e5e5e5;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .task-item.completed {
-        background: #f8f9fa;
-        opacity: 0.8;
-      }
-
-      .task-checkbox {
-        width: 18px;
-        height: 18px;
-        border: 2px solid #d5d5d5;
-        border-radius: 4px;
-        cursor: pointer;
-        position: relative;
-        transition: all 0.2s ease;
-        flex-shrink: 0;
-      }
-
-      .task-checkbox.checked {
-        background: #0f0f0f;
-        border-color: #0f0f0f;
-      }
-
-      .task-checkbox.checked::after {
-        content: '✓';
-        color: white;
-        font-size: 12px;
-        font-weight: bold;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .task-text {
-        flex: 1;
-        font-size: 15px;
-        color: #0f0f0f;
-        line-height: 1.4;
-        word-break: break-word;
-      }
-
-      .task-item.completed .task-text {
-        text-decoration: line-through;
-        color: #a3a3a3;
-      }
-
-      .task-actions {
-        display: flex;
-        gap: 0.5rem;
-        flex-shrink: 0;
-      }
-
-      .task-delete {
-        background: none;
-        border: none;
-        color: #f87171;
-        font-size: 16px;
-        cursor: pointer;
-        padding: 0.25rem;
-        border-radius: 4px;
-        transition: all 0.2s ease;
-        width: 28px;
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .task-delete:hover {
-        background: #fef2f2;
-        color: #dc2626;
-      }
-
-      .empty-state {
-        text-align: center;
-        padding: 3rem 1rem;
-        color: #a3a3a3;
-      }
-
-      .empty-state-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      .empty-state-text {
-        font-size: 16px;
-        margin-bottom: 0.5rem;
-      }
-
-      .empty-state-subtext {
-        font-size: 14px;
-        color: #d5d5d5;
-      }
-
-      .stats-section {
-        background: #f8f9fa;
-        border-radius: 12px;
-        padding: 2rem;
-        text-align: center;
-      }
-
-      .stats-header {
-        margin-bottom: 1.5rem;
-      }
-
-      .stats-title {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #0f0f0f;
-        margin-bottom: 0.5rem;
-      }
-
-      .stats-subtitle {
-        color: #525252;
-        font-size: 14px;
-      }
-
-      .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-      }
-
-      .stat-item {
-        background: white;
-        border-radius: 8px;
-        padding: 1.25rem;
-        border: 1px solid #e5e5e5;
-      }
-
-      .stat-number {
-        font-size: 2rem;
-        font-weight: 800;
-        color: #0f0f0f;
-        margin-bottom: 0.5rem;
-      }
-
-      .stat-label {
-        font-size: 12px;
-        color: #525252;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .add-task-section {
-          flex-direction: column;
-        }
-
-        .add-task-btn {
-          align-self: stretch;
-        }
-
-        .tasks-header {
-          flex-direction: column;
-          gap: 1rem;
-          align-items: stretch;
-        }
-
-        .stats-grid {
-          grid-template-columns: 1fr;
-          gap: 1rem;
-        }
-
-        .task-item {
-          padding: 0.75rem;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .todo-container {
-          padding: 1rem;
-        }
-        
-        .task-text {
-          font-size: 14px;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -419,14 +135,10 @@
                     <h3>Productivity</h3>
                     <ul>
                       <li>
-                        <a href="WordCounter.html"
-                          >→ Word Counter</a
-                        >
+                        <a href="WordCounter.html">→ Word Counter</a>
                       </li>
                       <li>
-                        <a href="CharacterCounter.html"
-                          >→ Character Counter</a
-                        >
+                        <a href="CharacterCounter.html">→ Character Counter</a>
                       </li>
                       <li>
                         <a href="TextCaseConverter.html"
@@ -434,14 +146,10 @@
                         >
                       </li>
                       <li>
-                        <a href="NoteTaker.html"
-                          >→ Note Taker</a
-                        >
+                        <a href="NoteTaker.html">→ Note Taker</a>
                       </li>
                       <li>
-                        <a href="TodoList.html"
-                          >→ To-Do List Manager</a
-                        >
+                        <a href="TodoList.html">→ To-Do List Manager</a>
                       </li>
                     </ul>
                   </div>
@@ -493,70 +201,62 @@
 
       <!-- Main Tool Content -->
       <main class="tool-content">
-        <!-- Tool Header -->
         <div class="tool-header">
-          <h2 class="tool-title">To-Do List Manager</h2>
+          <h1 class="tool-title">To-Do List Manager</h1>
           <p class="tool-description">
-            Stay organized and productive with our simple yet powerful task management tool. Add, complete, and manage your daily tasks effortlessly.
+            Stay organized and boost your productivity with our intuitive task
+            management tool. Add, complete, and track your daily tasks
+            efficiently.
           </p>
         </div>
 
-        <!-- To-Do List Tool -->
-        <div class="todo-container">
-          <!-- Add New Task Section -->
-          <div class="add-task-section">
+        <div class="input-section">
+          <div class="task-input-container">
             <input
               type="text"
-              id="taskInput"
               class="task-input"
-              placeholder="What needs to be done today?"
+              id="taskInput"
+              placeholder="Enter a new task..."
               maxlength="200"
             />
-            <button class="add-task-btn" onclick="addTask()">
-              Add Task
-            </button>
-          </div>
-
-          <!-- Tasks Header -->
-          <div class="tasks-header">
-            <div class="tasks-count">
-              <span id="totalTasks">0</span> total tasks
-            </div>
-            <button class="clear-completed-btn" onclick="clearCompleted()">
-              Clear Completed
-            </button>
-          </div>
-
-          <!-- Tasks List -->
-          <div class="tasks-list" id="tasksList">
-            <div class="empty-state" id="emptyState">
-              <div class="empty-state-icon">📝</div>
-              <div class="empty-state-text">No tasks yet</div>
-              <div class="empty-state-subtext">Add your first task above to get started</div>
-            </div>
+            <button class="btn-add" id="addTaskBtn">Add Task</button>
           </div>
         </div>
 
-        <!-- Statistics Section -->
         <div class="stats-section">
-          <div class="stats-header">
-            <h3 class="stats-title">Task Statistics</h3>
-            <p class="stats-subtitle">Track your productivity</p>
+          <div class="stat-item">
+            <div class="stat-number" id="totalTasks">0</div>
+            <div class="stat-label">Total Tasks</div>
           </div>
+          <div class="stat-item">
+            <div class="stat-number" id="pendingTasks">0</div>
+            <div class="stat-label">Pending</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="completedTasks">0</div>
+            <div class="stat-label">Completed</div>
+          </div>
+        </div>
 
-          <div class="stats-grid">
-            <div class="stat-item">
-              <div id="pendingCount" class="stat-number">0</div>
-              <div class="stat-label">Pending</div>
-            </div>
-            <div class="stat-item">
-              <div id="completedCount" class="stat-number">0</div>
-              <div class="stat-label">Completed</div>
-            </div>
-            <div class="stat-item">
-              <div id="completionRate" class="stat-number">0%</div>
-              <div class="stat-label">Completion Rate</div>
-            </div>
+        <div class="controls-section">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">
+              Completed
+            </button>
+          </div>
+          <button class="btn-clear" id="clearCompletedBtn">
+            Clear Completed
+          </button>
+        </div>
+
+        <div class="task-list" id="taskList">
+          <div class="empty-state">
+            <h3>No tasks yet</h3>
+            <p>
+              Add your first task above to get started with organizing your day!
+            </p>
           </div>
         </div>
       </main>
@@ -598,7 +298,9 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  Simply type your task in the input field at the top and click "Add Task" or press Enter. Your task will be immediately added to your list with a pending status.
+                  Simply type your task in the input field at the top and click
+                  "Add Task" or press Enter. Your task will be immediately added
+                  to your list with a pending status.
                 </p>
               </div>
             </div>
@@ -618,7 +320,10 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  Yes! Click the checkbox next to any task to mark it as completed. Completed tasks will be crossed out and moved to a less prominent visual state, but remain in your list for reference.
+                  Yes! Click the checkbox next to any task to mark it as
+                  completed. Completed tasks will be crossed out and moved to a
+                  less prominent visual state, but remain in your list for
+                  reference.
                 </p>
               </div>
             </div>
@@ -638,7 +343,11 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  Your tasks are stored locally in your browser, so they'll persist between sessions on the same device and browser. However, clearing your browser data will remove your tasks. For important lists, consider copying them elsewhere as backup.
+                  Your tasks are stored locally in your browser, so they'll
+                  persist between sessions on the same device and browser.
+                  However, clearing your browser data will remove your tasks.
+                  For important lists, consider copying them elsewhere as
+                  backup.
                 </p>
               </div>
             </div>
@@ -658,7 +367,9 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  Each task has a red delete button (×) on the right side. Click it to permanently remove the task from your list. You can also use "Clear Completed" to remove all completed tasks at once.
+                  Each task has a red delete button (×) on the right side. Click
+                  it to permanently remove the task from your list. You can also
+                  use "Clear Completed" to remove all completed tasks at once.
                 </p>
               </div>
             </div>
@@ -678,7 +389,10 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  There's no hard limit on the number of tasks, but each task can be up to 200 characters long. For very large lists (100+ tasks), you might notice slower performance depending on your device.
+                  There's no hard limit on the number of tasks, but each task
+                  can be up to 200 characters long. For very large lists (100+
+                  tasks), you might notice slower performance depending on your
+                  device.
                 </p>
               </div>
             </div>
@@ -698,7 +412,10 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  The statistics section shows your pending tasks, completed tasks, and completion rate percentage. This helps you track your productivity and see how much progress you're making on your goals.
+                  The statistics section shows your pending tasks, completed
+                  tasks, and completion rate percentage. This helps you track
+                  your productivity and see how much progress you're making on
+                  your goals.
                 </p>
               </div>
             </div>
@@ -718,7 +435,10 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  Absolutely! Our To-Do List Manager is fully responsive and works perfectly on smartphones and tablets. The interface adapts to smaller screens while maintaining full functionality.
+                  Absolutely! Our To-Do List Manager is fully responsive and
+                  works perfectly on smartphones and tablets. The interface
+                  adapts to smaller screens while maintaining full
+                  functionality.
                 </p>
               </div>
             </div>
@@ -738,7 +458,11 @@
               </button>
               <div class="faq-answer">
                 <p>
-                  Our tool is perfect for quick task management without requiring accounts or downloads. It's instantly accessible from any browser, completely free, and focuses on simplicity and speed. Ideal for daily task lists, shopping lists, or quick project planning.
+                  Our tool is perfect for quick task management without
+                  requiring accounts or downloads. It's instantly accessible
+                  from any browser, completely free, and focuses on simplicity
+                  and speed. Ideal for daily task lists, shopping lists, or
+                  quick project planning.
                 </p>
               </div>
             </div>
@@ -748,7 +472,7 @@
     </section>
 
     <!-- Footer -->
-     <footer>
+    <footer>
       <div class="footer-content">
         <div class="footer-section">
           <h3>Tooli</h3>
@@ -771,11 +495,6 @@
           <h3>Tool Categories</h3>
           <ul>
             <li><a href="#">Productivity Tools</a></li>
-            <!-- <li><a href="#">Health & Fitness</a></li>
-            <li><a href="#">Finance & Business</a></li>
-            <li><a href="#">Web & Coding</a></li>
-            <li><a href="#">Image Tools</a></li>
-            <li><a href="#">Conversion Tools</a></li> -->
           </ul>
         </div>
         <div class="footer-section">
@@ -790,172 +509,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>©2025 Tooli. All rights reserved.</p>
+        <p>Tooli © 2024-©2025. All rights reserved.</p>
       </div>
     </footer>
 
     <!-- JavaScript -->
     <script src="../../js/header.js"></script>
     <script src="../../js/faqTools.js"></script>
-    
-    <script>
-      // To-Do List Manager JavaScript
-      let tasks = [];
-      let taskIdCounter = 1;
-
-      // Load tasks from localStorage on page load
-      window.addEventListener('load', function() {
-        loadTasks();
-        updateDisplay();
-        
-        // Add Enter key functionality to task input
-        document.getElementById('taskInput').addEventListener('keypress', function(e) {
-          if (e.key === 'Enter') {
-            addTask();
-          }
-        });
-      });
-
-      // Load tasks from localStorage
-      function loadTasks() {
-        const savedTasks = JSON.parse(localStorage.getItem('tooli_tasks') || '[]');
-        tasks = savedTasks;
-        if (tasks.length > 0) {
-          taskIdCounter = Math.max(...tasks.map(t => t.id)) + 1;
-        }
-      }
-
-      // Save tasks to localStorage
-      function saveTasks() {
-        localStorage.setItem('tooli_tasks', JSON.stringify(tasks));
-      }
-
-      // Add new task
-      function addTask() {
-        const input = document.getElementById('taskInput');
-        const taskText = input.value.trim();
-        
-        if (taskText === '') {
-          alert('Please enter a task!');
-          return;
-        }
-
-        const newTask = {
-          id: taskIdCounter++,
-          text: taskText,
-          completed: false,
-          createdAt: new Date().toISOString()
-        };
-
-        tasks.unshift(newTask);
-        input.value = '';
-        saveTasks();
-        updateDisplay();
-        
-        // Show success animation
-        input.style.borderColor = '#10b981';
-        setTimeout(() => {
-          input.style.borderColor = '#e5e5e5';
-        }, 300);
-      }
-
-      // Toggle task completion
-      function toggleTask(taskId) {
-        const task = tasks.find(t => t.id === taskId);
-        if (task) {
-          task.completed = !task.completed;
-          saveTasks();
-          updateDisplay();
-        }
-      }
-
-      // Delete task
-      function deleteTask(taskId) {
-        tasks = tasks.filter(t => t.id !== taskId);
-        saveTasks();
-        updateDisplay();
-      }
-
-      // Clear all completed tasks
-      function clearCompleted() {
-        const completedCount = tasks.filter(t => t.completed).length;
-        if (completedCount === 0) {
-          alert('No completed tasks to clear!');
-          return;
-        }
-        
-        if (confirm(`Delete ${completedCount} completed task${completedCount > 1 ? 's' : ''}?`)) {
-          tasks = tasks.filter(t => !t.completed);
-          saveTasks();
-          updateDisplay();
-        }
-      }
-
-      // Update the display
-      function updateDisplay() {
-        updateTasksList();
-        updateStats();
-      }
-
-      // Update tasks list display
-      function updateTasksList() {
-        const tasksList = document.getElementById('tasksList');
-        const emptyState = document.getElementById('emptyState');
-        
-        if (tasks.length === 0) {
-          emptyState.style.display = 'block';
-          return;
-        }
-        
-        emptyState.style.display = 'none';
-        
-        tasksList.innerHTML = tasks.map(task => `
-          <div class="task-item ${task.completed ? 'completed' : ''}">
-            <div class="task-checkbox ${task.completed ? 'checked' : ''}" onclick="toggleTask(${task.id})"></div>
-            <div class="task-text">${escapeHtml(task.text)}</div>
-            <div class="task-actions">
-              <button class="task-delete" onclick="deleteTask(${task.id})" title="Delete task">×</button>
-            </div>
-          </div>
-        `).join('');
-      }
-
-      // Update statistics
-      function updateStats() {
-        const totalTasks = tasks.length;
-        const completedTasks = tasks.filter(t => t.completed).length;
-        const pendingTasks = totalTasks - completedTasks;
-        const completionRate = totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
-
-        document.getElementById('totalTasks').textContent = totalTasks;
-        document.getElementById('pendingCount').textContent = pendingTasks;
-        document.getElementById('completedCount').textContent = completedTasks;
-        document.getElementById('completionRate').textContent = completionRate + '%';
-      }
-
-      // Escape HTML to prevent XSS
-      function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-      }
-
-      // FAQ Toggle Function
-      function toggleFAQ(button) {
-        const faqItem = button.parentElement;
-        const faqAnswer = faqItem.querySelector('.faq-answer');
-        const icon = button.querySelector('.faq-icon');
-        
-        faqItem.classList.toggle('active');
-        
-        if (faqItem.classList.contains('active')) {
-          faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
-          icon.style.transform = 'rotate(180deg)';
-        } else {
-          faqAnswer.style.maxHeight = '0';
-          icon.style.transform = 'rotate(0deg)';
-        }
-      }
-    </script>
+    <script src="../../js/Productivity/ToDoList.js"></script>
   </body>
 </html>
