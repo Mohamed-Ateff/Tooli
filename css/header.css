@@ -58,7 +58,7 @@ nav {
 }
 
 .donate-btn {
-  background: linear-gradient(45deg, #ff0080, #ff8c00);
+  background-color: #146ef5;
   color: white;
   padding: 0.75rem 1.75rem;
   border-radius: 100px;

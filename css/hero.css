@@ -45,8 +45,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, #ff0080, #ff8c00);
-  opacity: 0.7;
+  background-color: #146ef5;
   color: white;
   padding: 1rem 2.5rem;
   border-radius: 100px;

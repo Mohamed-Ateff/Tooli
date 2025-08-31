@@ -13,7 +13,7 @@ body {
 }
 
 .gradient-effect {
-  background: linear-gradient(45deg, #ff0080, #ff8c00, #ffed00);
+  background-color: #146ef5;
   position: absolute;
   top: -100px;
   left: -100px;
@@ -23,14 +23,6 @@ body {
   filter: blur(100px);
   opacity: 0.5;
   animation: pulse 15s ease-in-out infinite;
-}
-
-.text {
-  font-size: 1rem;
-  font-weight: 600;
-  background: linear-gradient(to right, #ff0080, #ff8c00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* Mobile Styles */

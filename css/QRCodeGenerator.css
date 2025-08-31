@@ -80,7 +80,7 @@
 }
 
 .download-btn {
-  background: linear-gradient(45deg, #ff0080, #ff8c00);
+  background-color: #146ef5;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
