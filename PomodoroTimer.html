@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KSG4W7JTSM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-KSG4W7JTSM");
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5868349534316496"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer - Boost Productivity with Focus Timer | Tooli</title>
+    <meta
+      name="description"
+      content="Boost productivity with Tooli's free online Pomodoro Timer. Stay focused with customizable work and break intervals."
+    />
+    <meta
+      name="keywords"
+      content="pomodoro timer, focus timer, productivity tool, time management, work timer, break timer, Tooli"
+    />
+    <meta name="author" content="Tooli" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta
+      property="og:title"
+      content="Pomodoro Timer - Boost Productivity with Focus Timer | Tooli"
+    />
+    <meta
+      property="og:description"
+      content="Use Tooli's free Pomodoro Timer to enhance focus and productivity with customizable work and break sessions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.Tooli.com/pomodoro-timer" />
+    <meta
+      property="og:image"
+      content="https://www.Tooli.com/images/pomodoro-timer-og-image.jpg"
+    />
+    <meta property="og:site_name" content="Tooli" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pomodoro Timer - Boost Productivity with Focus Timer | Tooli"
+    />
+    <meta
+      name="twitter:description"
+      content="Free online Pomodoro Timer by Tooli. Stay focused with customizable work and break intervals."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.Tooli.com/images/pomodoro-timer-og-image.jpg"
+    />
+    <meta name="twitter:site" content="@Tooli" />
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Pomodoro Timer - Tooli",
+        "description": "Boost productivity with Tooli's free online Pomodoro Timer. Stay focused with customizable work and break intervals.",
+        "url": "https://www.Tooli.com/pomodoro-timer",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Tooli",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.Tooli.com/images/Tooli-logo.png"
+          }
+        },
+        "mainEntity": {
+          "@type": "SoftwareApplication",
+          "name": "Pomodoro Timer",
+          "applicationCategory": "Productivity",
+          "operatingSystem": "Web",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+      }
+    </script>
+
+    <!-- Common CSS Files -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/Tools.css" />
+    <link rel="stylesheet" href="css/faqTools.css" />
+
+    <!-- Pomodoro Timer Specific CSS -->
+    <style>
+      /* Pomodoro Timer Specific Styles */
+      .timer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        background: #f8f8f8;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+        margin-bottom: 2rem;
+      }
+
+      .timer-display {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #0f0f0f;
+        margin-bottom: 1.5rem;
+        font-family: "Inter", sans-serif;
+      }
+
+      .timer-mode {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #525252;
+        margin-bottom: 1rem;
+      }
+
+      .timer-controls {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .timer-settings {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 1.5rem;
+      }
+
+      .option-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .option-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #0f0f0f;
+        margin-bottom: 0.5rem;
+      }
+
+      .number-input {
+        padding: 0.75rem 1rem;
+        border: 2px solid #e5e5e5;
+        border-radius: 8px;
+        font-size: 14px;
+        background: #ffffff;
+        transition: all 0.2s ease;
+        font-family: inherit;
+      }
+
+      .number-input:focus {
+        outline: none;
+        border-color: #0f0f0f;
+        box-shadow: 0 0 0 3px rgba(15, 15, 15, 0.1);
+      }
+
+      .btn-primary {
+        background: linear-gradient(45deg, #ff0080, #ff8c00);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 0, 128, 0.3);
+      }
+
+      .btn-primary:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .btn-secondary {
+        background: #f1f5f9;
+        border: 1px solid #cbd5e1;
+        color: #475569;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .btn-secondary:hover {
+        background: #e2e8f0;
+        border-color: #94a3b8;
+      }
+
+      .progress-circle {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1.5rem;
+      }
+
+      .progress-circle svg {
+        transform: rotate(-90deg);
+      }
+
+      .progress-circle .circle-bg {
+        fill: none;
+        stroke: #e5e5e5;
+        stroke-width: 8;
+      }
+
+      .progress-circle .circle-progress {
+        fill: none;
+        stroke: #ff0080;
+        stroke-width: 8;
+        stroke-linecap: round;
+        transition: stroke-dashoffset 0.3s linear;
+      }
+
+      .progress-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #0f0f0f;
+      }
+
+      .message {
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+      .success-message {
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        color: #059669;
+      }
+
+      .error-message {
+        background: #fef2f2;
+        border: 1px solid #fecaca;
+        color: #dc2626;
+      }
+
+      /* Mobile responsive adjustments */
+      @media (max-width: 768px) {
+        .timer-settings {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .timer-display {
+          font-size: 3rem;
+        }
+
+        .progress-circle {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    </style>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Tooli</a>
+        <ul class="nav-center">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">All Tools</a>
+            <div class="mega-menu">
+              <div class="mega-menu-container">
+                <div class="mega-menu-grid">
+                  <div class="mega-menu-column">
+                    <h3>✅ Productivity Tools</h3>
+                    <ul>
+                      <li>
+                        <a href="ToDoList.html">→ To-Do List Manager</a>
+                      </li>
+                      <li>
+                        <a href="PomodoroTimer.html">→ Pomodoro Timer</a>
+                      </li>
+                      <li>
+                        <a href="NoteTaker.html">→ Note Taker</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>📝 Writing & Text Tools</h3>
+                    <ul>
+                      <li>
+                        <a href="WordCounter.html">→ Word Counter</a>
+                      </li>
+                      <li>
+                        <a href="CharacterCounter.html"
+                          >→ Character Counter</a
+                        >
+                      </li>
+                      <li>
+                        <a href="TextCaseConverter.html"
+                          >→ Text Case Converter</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>📦 File & Conversion Tools</h3>
+                    <ul>
+                      <li>
+                        <a href="QRCodeGenerator.html"
+                          >→ QR Code Generator</a
+                        >
+                      </li>
+                      <li>
+                        <a href="ImageConverter.html"
+                          >→ Image Converter</a
+                        >
+                      </li>
+                      <li>
+                        <a href="ImageResizer.html"
+                          >→ Image Resizer & Compressor
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a
+          href="https://ko-fi.com/donatetoTooli"
+          target="_blank"
+          class="donate-btn"
+          >Donate</a
+        >
+        <div class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Pomodoro Timer</h1>
+        <nav class="breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <span>Productivity</span>
+          <span>/</span>
+          <span class="current">Pomodoro Timer</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+      <!-- Left Advertisement Sidebar -->
+      <aside class="sidebar">
+        <h3>Advertisement</h3>
+        <div class="ad-placeholder">
+          <div class="ad-dimensions">300 × 600</div>
+          <div>Advertisement Space</div>
+        </div>
+      </aside>
+
+      <!-- Main Tool Content -->
+      <main class="tool-content">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <h2 class="tool-title">Pomodoro Timer Tool</h2>
+          <p class="tool-description">
+            Boost productivity with the Pomodoro Technique. Set customizable
+            work and break intervals to stay focused and avoid burnout.
+          </p>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="timer-container">
+          <div class="timer-mode" id="timerMode">Work Session</div>
+          <div class="progress-circle">
+            <svg width="150" height="150">
+              <circle class="circle-bg" cx="75" cy="75" r="70" />
+              <circle
+                class="circle-progress"
+                id="progressCircle"
+                cx="75"
+                cy="75"
+                r="70"
+                stroke-dasharray="439.6"
+                stroke-dashoffset="0"
+              />
+            </svg>
+            <div class="progress-text" id="progressText">25:00</div>
+          </div>
+          <div class="timer-controls">
+            <button class="btn-primary" id="startBtn" onclick="startTimer()">
+              Start
+            </button>
+            <button
+              class="btn-primary"
+              id="pauseBtn"
+              onclick="pauseTimer()"
+              disabled
+            >
+              Pause
+            </button>
+            <button class="btn-secondary" id="resetBtn" onclick="resetTimer()">
+              Reset
+            </button>
+          </div>
+          <div class="timer-settings">
+            <div class="option-group">
+              <label class="option-label" for="workDuration"
+                >Work Duration (min)</label
+              >
+              <input
+                type="number"
+                id="workDuration"
+                class="number-input"
+                min="1"
+                max="60"
+                value="25"
+              />
+            </div>
+            <div class="option-group">
+              <label class="option-label" for="shortBreakDuration"
+                >Short Break (min)</label
+              >
+              <input
+                type="number"
+                id="shortBreakDuration"
+                class="number-input"
+                min="1"
+                max="30"
+                value="5"
+              />
+            </div>
+            <div class="option-group">
+              <label class="option-label" for="longBreakDuration"
+                >Long Break (min)</label
+              >
+              <input
+                type="number"
+                id="longBreakDuration"
+                class="number-input"
+                min="1"
+                max="60"
+                value="15"
+              />
+            </div>
+          </div>
+          <div id="messageContainer" class="message"></div>
+        </div>
+      </main>
+
+      <!-- Right Advertisement Sidebar -->
+      <aside class="sidebar">
+        <h3>Advertisement</h3>
+        <div class="ad-placeholder">
+          <div class="ad-dimensions">300 × 600</div>
+          <div>Advertisement Space</div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="main-container2">
+        <div class="faq-content">
+          <div class="faq-header">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-subtitle">
+              Everything you need to know about our Pomodoro Timer tool
+            </p>
+          </div>
+
+          <div class="faq-grid">
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>What is the Pomodoro Technique?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  The Pomodoro Technique is a time management method that uses a
+                  timer to break work into intervals, typically 25 minutes of
+                  focused work followed by a 5-minute break. After four work
+                  sessions, a longer break (15-30 minutes) is taken to recharge.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>How do I use the Pomodoro Timer?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Set your desired work, short break, and long break durations.
+                  Click "Start" to begin a work session. The timer will
+                  automatically switch between work and break sessions. Use
+                  "Pause" to temporarily stop and "Reset" to start over.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Can I customize the timer durations?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, you can adjust the work duration (1-60 minutes), short
+                  break duration (1-30 minutes), and long break duration (1-60
+                  minutes) to suit your needs. The default settings are 25
+                  minutes for work, 5 minutes for short breaks, and 15 minutes
+                  for long breaks.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>What happens after four work sessions?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  After completing four work sessions, the timer automatically
+                  switches to a long break to help you recharge. Once the long
+                  break is complete, the cycle restarts with a new work session.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Does the timer make a sound?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, the timer plays a gentle sound when a work or break
+                  session ends to alert you. Ensure your device's sound is
+                  enabled to hear the notification.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Is my data stored when using the timer?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No, your privacy is protected. The Pomodoro Timer runs locally
+                  in your browser, and no data is stored or sent to our servers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Tooli</h3>
+          <p>Free online tools for everyone — simple, fast, and reliable.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="https://ko-fi.com/donatetoTooli" target="_blank"
+                >Donate</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Tool Categories</h3>
+          <ul>
+            <li><a href="#">Productivity Tools</a></li>
+            <li><a href="#">File & Conversion</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Popular Tools</h3>
+          <ul>
+            <li><a href="WordCounter.html">Word Counter</a></li>
+            <li><a href="CharacterCounter.html">Character Counter</a></li>
+            <li><a href="TextCaseConverter.html">Text Case Converter</a></li>
+            <li><a href="NoteTaker.html">Note Taker</a></li>
+            <li><a href="PomodoroTimer.html">Pomodoro Timer</a></li>
+            <li><a href="ImageResizer.html">Image Resizer & Compressor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Tooli © 2024-©2025. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="js/header.js"></script>
+    <script src="js/faqTools.js"></script>
+
+    <!-- Pomodoro Timer Script -->
+    <script>
+      let timerInterval = null;
+      let timeLeft = 0;
+      let isRunning = false;
+      let currentMode = "work";
+      let sessionCount = 0;
+
+      const workDurationInput = document.getElementById("workDuration");
+      const shortBreakDurationInput =
+        document.getElementById("shortBreakDuration");
+      const longBreakDurationInput =
+        document.getElementById("longBreakDuration");
+      const timerMode = document.getElementById("timerMode");
+      const progressText = document.getElementById("progressText");
+      const progressCircle = document.getElementById("progressCircle");
+      const startBtn = document.getElementById("startBtn");
+      const pauseBtn = document.getElementById("pauseBtn");
+      const resetBtn = document.getElementById("resetBtn");
+      const messageContainer = document.getElementById("messageContainer");
+
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${minutes.toString().padStart(2, "0")}:${secs
+          .toString()
+          .padStart(2, "0")}`;
+      }
+
+      function updateProgressCircle(seconds, totalSeconds) {
+        const progress = (seconds / totalSeconds) * 439.6;
+        progressCircle.style.strokeDashoffset = 439.6 - progress;
+      }
+
+      function playSound() {
+        const audio = new Audio(
+          "https://www.soundjay.com/buttons/beep-01a.mp3"
+        );
+        audio.play().catch((err) => console.log("Audio playback failed:", err));
+      }
+
+      function showMessage(message, type) {
+        messageContainer.className = `message ${type}-message`;
+        messageContainer.textContent = message;
+        if (type === "success") {
+          setTimeout(() => {
+            messageContainer.textContent = "";
+            messageContainer.className = "message";
+          }, 5000);
+        }
+      }
+
+      function startTimer() {
+        if (isRunning) return;
+
+        let duration;
+        if (currentMode === "work") {
+          duration = parseInt(workDurationInput.value) * 60;
+          timerMode.textContent = "Work Session";
+        } else if (currentMode === "shortBreak") {
+          duration = parseInt(shortBreakDurationInput.value) * 60;
+          timerMode.textContent = "Short Break";
+        } else {
+          duration = parseInt(longBreakDurationInput.value) * 60;
+          timerMode.textContent = "Long Break";
+        }
+
+        if (duration < 60) {
+          showMessage("Duration must be at least 1 minute.", "error");
+          return;
+        }
+
+        timeLeft = duration;
+        isRunning = true;
+        startBtn.disabled = true;
+        pauseBtn.disabled = false;
+        resetBtn.disabled = false;
+
+        updateProgressCircle(timeLeft, duration);
+        progressText.textContent = formatTime(timeLeft);
+
+        timerInterval = setInterval(() => {
+          timeLeft--;
+          progressText.textContent = formatTime(timeLeft);
+          updateProgressCircle(timeLeft, duration);
+
+          if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            isRunning = false;
+            startBtn.disabled = false;
+            pauseBtn.disabled = true;
+
+            playSound();
+            showMessage(`${timerMode.textContent} completed!`, "success");
+
+            if (currentMode === "work") {
+              sessionCount++;
+              currentMode = sessionCount % 4 === 0 ? "longBreak" : "shortBreak";
+            } else {
+              currentMode = "work";
+            }
+
+            startTimer(); // Automatically start next session
+          }
+        }, 1000);
+      }
+
+      function pauseTimer() {
+        if (!isRunning) return;
+        clearInterval(timerInterval);
+        isRunning = false;
+        startBtn.disabled = false;
+        pauseBtn.disabled = true;
+        showMessage("Timer paused.", "success");
+      }
+
+      function resetTimer() {
+        clearInterval(timerInterval);
+        isRunning = false;
+        timeLeft = parseInt(workDurationInput.value) * 60;
+        currentMode = "work";
+        sessionCount = 0;
+        timerMode.textContent = "Work Session";
+        progressText.textContent = formatTime(timeLeft);
+        updateProgressCircle(timeLeft, timeLeft);
+        startBtn.disabled = false;
+        pauseBtn.disabled = true;
+        resetBtn.disabled = true;
+        messageContainer.textContent = "";
+        messageContainer.className = "message";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        resetTimer();
+      });
+    </script>
+  </body>
+</html>
