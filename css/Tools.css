@@ -8,7 +8,7 @@
    =============================================== */
 .hero {
   width: 100%;
-  background: #fafafa;
+  background-color: #146ef5;
   padding: 4rem 0;
   text-align: center;
   margin-top: 80px; /* Account for fixed header */
@@ -39,7 +39,7 @@
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
-  color: #0f0f0f;
+  color: white;
   letter-spacing: -0.04em;
   line-height: 1.1;
   opacity: 0;
@@ -49,7 +49,7 @@
 .hero-subtitle {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #525252;
+  color: white;
   margin-bottom: 2rem;
   line-height: 1.6;
   opacity: 0;
@@ -59,7 +59,7 @@
 /* Breadcrumb Navigation */
 .breadcrumb {
   font-size: 14px;
-  color: #525252;
+  color: white;
   opacity: 0;
   animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
   width: fit-content;
@@ -69,7 +69,7 @@
 
 .breadcrumb a {
   margin-right: 6px;
-  color: #0f0f0f;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -81,11 +81,11 @@
 
 .breadcrumb span {
   margin: 0 0.5rem;
-  color: #a3a3a3;
+  color: white;
 }
 
 .breadcrumb .current {
-  color: #525252;
+  color: white;
   font-weight: 400;
 }
 
